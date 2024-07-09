@@ -4,17 +4,20 @@ import fs from "fs/promises";
 const generateFakeAccommodation = () => {
   return {
     title: faker.lorem.words(3),
+    description: faker.lorem.paragraph(3),
+    summary: faker.lorem.paragraph(1),
     images: [
       faker.image.urlLoremFlickr({ category: "travel" }),
       faker.image.urlLoremFlickr({ category: "travel" }),
       faker.image.urlLoremFlickr({ category: "travel" }),
     ],
-    rating: parseFloat((Math.random() * 5).toFixed(1)),
+    rating: Number((Math.random() * 5).toFixed(1)),
+    reviews: Math.floor(Math.random() * 200 + 1),
     coordinates: {
       latitude: faker.location.latitude(),
       longitude: faker.location.longitude(),
     },
-    price: parseFloat(faker.commerce.price()),
+    price: Number(faker.commerce.price()),
   };
 };
 

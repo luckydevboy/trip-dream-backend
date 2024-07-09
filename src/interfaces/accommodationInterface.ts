@@ -1,5 +1,7 @@
 export default interface AccommodationInterface {
   title: string;
+  description: string;
+  summary: string;
   images: string[];
   rating: number;
   coordinates: {
@@ -7,4 +9,5 @@ export default interface AccommodationInterface {
     longitude: number;
   };
   price: number;
+  reviews: number;
 }

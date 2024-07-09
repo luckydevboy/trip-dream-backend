@@ -1,3 +1,3 @@
-GET http://localhost:3001/api/v1/accommodations?pageSize=2
+GET http://localhost:3001/api/v1/accommodations?pageSize=1
 ###
 GET http://localhost:3001/api/v1/accommodations/668cdcd469f6634ea1f8df46
